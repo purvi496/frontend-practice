@@ -1,0 +1,189 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* h2 {
+  color: green;
+} */
+/* #title {
+  color: aquamarine;
+} */
+/* .logo {
+  color: brown;
+} */
+/* inline > id selector > class selector > Tag selector */
+
+nav {
+  background-color: white;
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+nav h2 {
+  color: #ff5722;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  position: sticky;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.hero {
+  background-color: #051483;
+  color: white;
+  text-align: center;
+  padding: 90px 20px;
+}
+.hero h1 {
+  font-size: 48px;
+}
+.hero p {
+  margin: 20px 0;
+}
+.order-btn {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bolder;
+}
+/* pseudo classes -> adding more styles to entire element */
+button:hover {
+  background-color: black;
+  transition: 10s;
+}
+input:focus {
+  background-color: lightblue;
+}
+nav ul li a:hover {
+  color: #ff5722;
+  background-color: antiquewhite;
+}
+/* Pseudo elements -> adding extra styles only to a certain part of the element. */
+.hero h1::first-line {
+  color: deeppink;
+}
+.hero h1::before {
+  content: "😋";
+}
+.hero h1::after {
+  content: "⚡";
+}
+.categories {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  background-color: white;
+}
+.category {
+  background-color: #fff3e0;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.restaurants {
+  padding: 60px;
+}
+.restaurants h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.restaurants h2::before {
+  content: "🍽️";
+}
+.restaurant-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+.card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 12px rgba(0, 0, 0.15);
+  transition: 0.4s;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: space-between;
+}
+.card h3 {
+  padding: 15px;
+  text-align: center;
+}
+.card button {
+  margin: 20px auto;
+  width: 120px;
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+.card p {
+  padding: 0 15px;
+}
+.offer {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: red;
+  padding: 8px 15px;
+  color: white;
+  border-radius: 20px;
+  font-size: 13px;
+}
+.card:hover {
+  transform: translateY(-10px);
+}
+.support {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #25d366;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+}
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  margin-top: 50px;
+}
+.bike {
+  font-size: 145px;
+  margin-top: 40px;
+  animation: ride 6s linear infinite;
+}
+@keyframes ride {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(1800px);
+  }
+}

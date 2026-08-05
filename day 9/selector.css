@@ -1,0 +1,17 @@
+h1{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    color: #5d4941;
+}
+#id-selector{
+    color: #5d4941;
+    text-align: center;
+    background-color: #f5f1ef;
+}
+.class-selector{
+    color: #5d4941;
+    text-align: center;
+    background-color: #f5f1ef;
+}

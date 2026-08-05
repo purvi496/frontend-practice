@@ -1,0 +1,15 @@
+table{
+    width:20%;
+}
+th{
+    background-color: #8a5252;
+    color:rgb(247, 245, 245);
+    padding:12px;
+}
+td{
+    padding:12px;
+    text-align:center;
+}
+table,th,td{
+    border:3px solid black;
+}

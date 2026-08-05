@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <h2>Employee Registration</h2>
+    <form action="/6/form.html" method = "post">
+        <label for="empId">Employee ID:</label>
+        <input type="text" id="empId" name="employee_id" placeholder="Enter Employee ID" required><br><br>
+        <label for="Emplname">Name:</label>
+        <input type="text" id="Emplname" name="name" placeholder="Enter your name" required><br><br>
+         <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+         <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" placeholder="Enter mobile number" required><br><br>
+        <label for="doj">Date of Joining:</label>
+        <input type="date" id="doj" name="doj" required><br><br>
+        <br>
+        <label>Department</label>
+        <input type="radio" name="department" value="IT">IT
+        <input type="radio" name="department" value="HR">HR
+        <input type="radio" name="department" value="Finance">Finance  
+        <br><br>
+        <label >skills</label>
+        <input type="checkbox" name="skills" value="Java">Java
+        <input type="checkbox" name="skills" value="Python">Python  
+        <input type="checkbox" name="skills" value="JavaScript">JavaScript
+        <input type="checkbox" name="skills" value="C++">C++    
+        <br><br>
+        <label>experience</label>
+        <select>
+            <option>select experience</option>
+            <option>fresher</option>
+            <option>1 year</option>
+            <option>2 years</option>
+            <option>3 years</option>
+        </select>
+        <br><br>
+        <label>Address:</label>
+        <textarea rows="2" cols="50"> </textarea>
+        <br><br>
+        <label>experience letter</label>
+        <input type="file">
+        <br><br>
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear Form">
+    </form>
+</body> 
+</html>
