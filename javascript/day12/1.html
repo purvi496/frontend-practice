@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form onsubmit="return validateForm()">
+
+    Name:
+    <input type="text" id="name">
+    <span id="nameError"></span>
+    <br><br>
+
+    Email:
+    <input type="text" id="email">
+    <span id="emailError"></span>
+    <br><br>
+
+    Website:
+    <input type="text" id="website">
+    <span id="websiteError"></span>
+    <br><br>
+
+    Message:
+    <textarea id="message"></textarea>
+    <span id="messageError"></span>
+    <br><br>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+<script>
+
+function validateForm() {
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let website = document.getElementById("website").value;
+    let message = document.getElementById("message").value;
+
+    let valid = true;
+
+    if (name == "") {
+        document.getElementById("nameError").innerHTML =
+        "This field is required";
+        valid = false;
+    }
+
+    if (email == "") {
+        document.getElementById("emailError").innerHTML =
+        "Email is required";
+        valid = false;
+    }
+
+    if (website == "") {
+        document.getElementById("websiteError").innerHTML =
+        "Website is required";
+        valid = false;
+    }
+
+    if (message == "") {
+        document.getElementById("messageError").innerHTML =
+        "This field is required";
+        valid = false;
+    }
+
+    return valid;
+}
+
+</script>
+
+</body>
+</html>
